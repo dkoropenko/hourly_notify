@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dkoropenko.hourly-notify",
+  "name": "Hourly Notification",
+  "version": "1.0.1",
+  "author": "dkoropenko",
+  "description": "Plays a notification sound every hour with its own volume control",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Hourly Notification",
+    "description": "Plays a notification sound every hour with its own volume control",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "enabled": true,
+      "sound": "/usr/share/sounds/freedesktop/stereo/complete.oga",
+      "volume": 0.6
+    },
+    "schema": [
+      { "key": "enabled", "type": "boolean", "label": "Enable" },
+      { "key": "sound", "type": "string", "label": "Sound" },
+      { "key": "volume", "type": "number", "label": "Volume" }
+    ]
+  }
+}
