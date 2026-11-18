@@ -3,6 +3,7 @@
   "id": "dkoropenko.hourly-notify",
   "name": "Hourly Notification",
   "version": "1.0.1",
+  "license": "MIT",
   "author": "dkoropenko",
   "description": "Plays a notification sound every hour with its own volume control",
   "kinds": [
